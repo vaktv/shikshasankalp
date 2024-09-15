@@ -27,10 +27,12 @@ const Nav = () => {
     <div className="topnav" id="myTopnav">
         <div className="one">
             <li><Link to="/"  onClick={() => setActiveNav('#')} id="homeli" className={activeNav === '#' ? '' : ''}><img className="navimg" src="home1.png" alt=""/>Shiksha<span className="text-blue">Sankalp</span></Link></li>
-            <li className="all-li"><Link to="/courses" onClick={() => setActiveNav('#courses')}  className={activeNav === '#courses' ? 'active' : ''}>Courses</Link></li>
+            {/* <li className="all-li"><Link to="/courses" onClick={() => setActiveNav('#courses')}  className={activeNav === '#courses' ? 'active' : ''}>Courses</Link></li>
             <li className="all-li"><Link to="/blog" onClick={() => setActiveNav('#blog')}  className={activeNav === '#blog' ? 'active' : ''}>Blog</Link></li> 
-            <li className="all-li"><Link to="/instructor" onClick={() => setActiveNav('#instructor')}  className={activeNav === '#instructor' ? 'active' : ''}>Become an Instructor</Link></li> 
+            <li className="all-li"><Link to="/instructor" onClick={() => setActiveNav('#instructor')}  className={activeNav === '#instructor' ? 'active' : ''}>Become an Instructor</Link></li>  */}
             <li className="all-li"><Link to="/contact" onClick={() => setActiveNav('#contact')}  className={activeNav === '#contact' ? 'active' : ''}>Contact</Link></li>
+            {/* <li className="all-li"><Link to="/videos" onClick={() => setActiveNav('#videos')}  className={activeNav === '#videos' ? 'active' : ''}>Videos</Link></li> */}
+
         </div>
         <div className="two">
             <li onClick={() => setActiveNav('#login')}  className={activeNav === '#login' ? 'active' : ''}><Link to="/login" className="loginbtn btn">Login / Register</Link></li>
